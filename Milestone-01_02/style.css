@@ -1,0 +1,135 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Light blue background */
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column; /* Changed to column for better mobile responsiveness */
+  width: 90%; /* Smaller width for mobile */
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px; /* Rounded corners for the whole resume */
+}
+
+h1, h3 {
+  margin-top: 0;
+}
+
+/* Left section styling */
+.left-section {
+  background-color: #009688; /* Light teal blue */
+  color: black; /* Updated text color to black */
+  padding: 20px;
+  width: 100%; /* Full width for mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px 8px 0 0; /* Rounded corners for mobile */
+}
+
+.left-section h3 {
+  color: black; /* Updated heading color to black */
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 90px; /* Smaller profile picture */
+  height: 90px;
+}
+
+.left-section p {
+  text-align: center;
+  color: black; /* Ensure all paragraphs are black */
+  margin-bottom: 10px;
+}
+
+/* Right section styling */
+.right-section {
+  background-color: white;
+  padding: 20px;
+  width: 100%; /* Full width for mobile */
+  color: #333;
+  border-radius: 0 0 8px 8px; /* Rounded corners for mobile */
+}
+
+.right-section h1 {
+  color: #009688; /* Light teal blue for headings */
+}
+
+.right-section h3 {
+  color: #333;
+}
+
+.right-section a {
+  color: #009688;
+  text-decoration: none;
+}
+
+.right-section a:hover {
+  text-decoration: underline;
+}
+
+/* Boxed sections with shadow */
+section {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each section */
+}
+
+/* Skills Section Styling */
+#skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#skills ul li {
+  background-color: #009688;
+  color: white;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+/* Button Styling */
+#toggle-skills {
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow on the button */
+}
+
+#toggle-skills:hover {
+  background-color: #00796b; /* Darker teal on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .resume-container {
+    flex-direction: row; /* Switch to row layout on larger screens */
+    width: 80%; /* Adjust width for larger screens */
+  }
+
+  .left-section {
+    width: 35%;
+    border-radius: 8px 0 0 8px; /* Original rounded corners for larger screens */
+  }
+
+  .right-section {
+    width: 65%;
+    border-radius: 0 8px 8px 0; /* Original rounded corners for larger screens */
+  }
+}
